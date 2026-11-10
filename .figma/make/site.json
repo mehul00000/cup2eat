@@ -1,0 +1,18 @@
+{
+  "title": "CUP2EAT — Eat Your Drink! | Premium Edible Cups India",
+  "description": "Discover CUP2EAT edible cups in Chocolate, Vanilla and Elaichi flavours. Explore innovative edible cups and wholesale opportunities for cafes, restaurants and businesses across India.",
+  "language": "en",
+  "robots": {
+    "index": true
+  },
+  "icons": {
+    "icon": "/favicon.png"
+  },
+  "openGraph": {
+    "image": "/intro-poster.jpg"
+  },
+  "accessibility": {
+    "addBypassLinks": true,
+    "ignoreReducedMotion": false
+  }
+}
