@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { OFFER, products, MSG_ORDER, MSG_GENERAL, waLink, FAQS } from "../data";
+import { OFFER, products, MSG_ORDER, MSG_GENERAL, waLink, FAQS, asset } from "../data";
 import { Arrow, Check, Cup, Leaf, Spark, Store, Truck, Users, WhatsApp } from "../icons";
 import { ArrowLink, Go, Reveal, SectionHead } from "../chrome";
 
@@ -79,7 +79,7 @@ export default function Home({ go }: { go: Go }) {
             <Reveal delay={200} className="hero-visual-reveal">
               <div className="hero-frame">
                 <img
-                  src="/img/hero-cups.jpg"
+                  src={asset("img/hero-cups.jpg")}
                   alt="Three CUP2EAT edible cups in Chocolate, Vanilla and Elaichi, filled with coffee, chai and ice cream"
                 />
               </div>
@@ -246,7 +246,7 @@ export default function Home({ go }: { go: Go }) {
       <section className="b2b-band">
         <Reveal className="b2b-media">
           <img
-            src="/img/wholesale-home.jpg"
+            src={asset("img/wholesale-home.jpg")}
             alt="A restaurant service counter — CUP2EAT wholesale for businesses"
             loading="lazy"
           />
@@ -276,7 +276,7 @@ export default function Home({ go }: { go: Go }) {
       <section className="brand-band">
         <Reveal className="brand-media">
           <img
-            src="/img/brand-story.jpg"
+            src={asset("img/brand-story.jpg")}
             alt="Warm hospitality moment — the idea behind CUP2EAT"
             loading="lazy"
           />
@@ -332,7 +332,7 @@ export default function Home({ go }: { go: Go }) {
       <section className="final-cta">
         <img
           className="final-cta-bg"
-          src="/img/final-cta.jpg"
+          src={asset("img/final-cta.jpg")}
           alt=""
           aria-hidden="true"
           loading="lazy"

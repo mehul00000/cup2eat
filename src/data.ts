@@ -1,5 +1,11 @@
 /* CUP2EAT — central content, brand data and helpers. */
 
+/**
+ * Resolve a public-asset path against the deploy base URL, so the site works
+ * both at a domain root (dev, "/" ) and on GitHub Pages subpaths ("/cup2eat/").
+ */
+export const asset = (path: string) => import.meta.env.BASE_URL + path.replace(/^\//, "");
+
 export const PHONE_DISPLAY = "+91 98181 92575";
 export const PHONE_TEL = "tel:+919818192575";
 export const WA_NUMBER = "919818192575";
@@ -47,9 +53,9 @@ export const products: Product[] = [
     name: "Chocolate",
     appearance: "Dark brown",
     tone: "#45210a",
-    card: "/img/product-chocolate.jpg",
-    shop: "/img/shop-chocolate.jpg",
-    gallery: ["/img/product-chocolate-2.jpg", "/img/product-chocolate-3.jpg"],
+    card: asset("img/product-chocolate.jpg"),
+    shop: asset("img/shop-chocolate.jpg"),
+    gallery: [asset("img/product-chocolate-2.jpg"), asset("img/product-chocolate-3.jpg")],
     tagline: "Rich chocolate-inspired edible cup",
     description:
       "A rich, dark cocoa-toned cup with a dessert-style finish. Made to hold your coffee, hot chocolate or dessert — and then become part of it.",
@@ -61,9 +67,9 @@ export const products: Product[] = [
     name: "Vanilla",
     appearance: "Golden beige",
     tone: "#bd7430",
-    card: "/img/product-vanilla.jpg",
-    shop: "/img/shop-vanilla.jpg",
-    gallery: ["/img/product-vanilla-2.jpg", "/img/product-vanilla-3.jpg"],
+    card: asset("img/product-vanilla.jpg"),
+    shop: asset("img/shop-vanilla.jpg"),
+    gallery: [asset("img/product-vanilla-2.jpg"), asset("img/product-vanilla-3.jpg")],
     tagline: "Classic vanilla-inspired edible cup",
     description:
       "A golden, classic vanilla-inspired cup. A gentle, familiar flavour that pairs beautifully with tea, coffee and sweet servings.",
@@ -75,9 +81,9 @@ export const products: Product[] = [
     name: "Elaichi",
     appearance: "Greenish golden",
     tone: "#7c8a4a",
-    card: "/img/product-elaichi.jpg",
-    shop: "/img/shop-elaichi.jpg",
-    gallery: ["/img/product-elaichi-2.jpg", "/img/product-elaichi-3.jpg"],
+    card: asset("img/product-elaichi.jpg"),
+    shop: asset("img/shop-elaichi.jpg"),
+    gallery: [asset("img/product-elaichi-2.jpg"), asset("img/product-elaichi-3.jpg")],
     tagline: "Cardamom-inspired edible cup",
     description:
       "A greenish-golden cup with a cardamom character, created for Indian chai moments, teas and dessert servings with a distinctly Indian touch.",

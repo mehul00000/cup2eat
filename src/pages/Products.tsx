@@ -1,4 +1,4 @@
-import { OFFER, productBySlug, productMsg, products, waLink } from "../data";
+import { OFFER, productBySlug, productMsg, products, waLink, asset } from "../data";
 import { Arrow, Check, WhatsApp } from "../icons";
 import { ArrowLink, Go, PageHero, Reveal, SectionHead } from "../chrome";
 
@@ -15,7 +15,7 @@ export function ProductsPage({ go }: { go: Go }) {
           </>
         }
         intro="Three signature flavours, each made to hold your beverage or dessert — and finish it deliciously."
-        image="/img/products-hero.jpg"
+        image={asset("img/products-hero.jpg")}
         alt="Espresso being prepared — edible cups pair with every coffee ritual"
       />
 

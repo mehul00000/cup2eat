@@ -6,6 +6,7 @@ import {
   isEmail,
   isPhone,
   saveEnquiry,
+  asset,
   waLink,
 } from "../data";
 import { Check, Phone, Store, Truck, Users, WhatsApp } from "../icons";
@@ -77,7 +78,7 @@ export default function Wholesale() {
           </>
         }
         intro="Serve something your customers will remember — and photograph. CUP2EAT supplies cafes, restaurants, hotels, caterers and distributors across India."
-        image="/img/wholesale-page.jpg"
+        image={asset("img/wholesale-page.jpg")}
         alt="Cafe table service with warm beverages — CUP2EAT wholesale"
       />
 

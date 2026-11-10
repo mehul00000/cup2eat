@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { FAQS, MSG_GENERAL, isEmail, isPhone, saveEnquiry, waLink } from "../data";
+import { FAQS, MSG_GENERAL, isEmail, isPhone, saveEnquiry, waLink, asset } from "../data";
 import { Arrow, Check, Cup, Leaf, Phone, Spark, Store, Users, WhatsApp } from "../icons";
 import { Go, PageHero, Reveal, SectionHead } from "../chrome";
 
@@ -31,7 +31,7 @@ export function ApplicationsPage() {
           <Reveal key={title}>
             <article className={`shop-row ${i % 2 ? "flip" : ""}`}>
               <div className="shop-media static">
-                <img src={`/img/${img}`} alt={`${title} served in CUP2EAT edible cups`} loading="lazy" />
+                <img src={asset(`img/${img}`)} alt={`${title} served in CUP2EAT edible cups`} loading="lazy" />
               </div>
               <div className="shop-copy">
                 <p className="eyebrow">0{i + 1}</p>
@@ -68,7 +68,7 @@ export function AboutPage({ go }: { go: Go }) {
 
       <section className="b2b-band">
         <Reveal className="b2b-media">
-          <img src="/img/about-story.jpg" alt="Plated dessert service — the craft behind CUP2EAT" loading="lazy" />
+          <img src={asset("img/about-story.jpg")} alt="Plated dessert service — the craft behind CUP2EAT" loading="lazy" />
         </Reveal>
         <Reveal delay={120} className="b2b-copy">
           <p className="eyebrow">The original idea</p>
@@ -115,7 +115,7 @@ export function AboutPage({ go }: { go: Go }) {
 
       <section className="b2b-band flip">
         <Reveal className="b2b-media">
-          <img src="/img/about-craft.jpg" alt="Warm hospitality setting — CUP2EAT's philosophy" loading="lazy" />
+          <img src={asset("img/about-craft.jpg")} alt="Warm hospitality setting — CUP2EAT's philosophy" loading="lazy" />
         </Reveal>
         <Reveal delay={120} className="b2b-copy">
           <p className="eyebrow">Our philosophy</p>
@@ -175,7 +175,7 @@ export function ContactPage() {
           </>
         }
         intro="Questions, order support or a business enquiry — the CUP2EAT team is one call or message away."
-        image="/img/contact.jpg"
+        image={asset("img/contact.jpg")}
         alt="Coffee and conversation — reach the CUP2EAT team"
       />
 

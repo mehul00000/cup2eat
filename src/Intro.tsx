@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { asset } from "./data";
+
 /**
  * Cinematic intro. Plays the brand film on every page load (including
  * reloads), then automatically reveals the website. A Skip button and
@@ -44,7 +46,7 @@ export function Intro({ onDone }: { onDone: () => void }) {
       <video
         ref={video}
         className="intro-video"
-        poster="/intro-poster.jpg"
+        poster={asset("intro-poster.jpg")}
         autoPlay
         muted
         playsInline
@@ -56,7 +58,7 @@ export function Intro({ onDone }: { onDone: () => void }) {
           if (d) setProgress(e.currentTarget.currentTime / d);
         }}
       >
-        <source src="/cup2eat-loade.mp4" type="video/mp4" />
+        <source src={asset("cup2eat-loade.mp4")} type="video/mp4" />
       </video>
 
       <div className="intro-top">
