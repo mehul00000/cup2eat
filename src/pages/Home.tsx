@@ -247,7 +247,7 @@ export default function Home({ go }: { go: Go }) {
         <Reveal className="b2b-media">
           <img
             src={asset("img/wholesale-home.jpg")}
-            alt="A restaurant service counter — CUP2EAT wholesale for businesses"
+            alt="CUP2EAT edible cups in all three flavours lined up on a restaurant service counter"
             loading="lazy"
           />
         </Reveal>
@@ -277,7 +277,7 @@ export default function Home({ go }: { go: Go }) {
         <Reveal className="brand-media">
           <img
             src={asset("img/brand-story.jpg")}
-            alt="Warm hospitality moment — the idea behind CUP2EAT"
+            alt="CUP2EAT edible cups with cocoa, vanilla and cardamom — the flavours behind the brand"
             loading="lazy"
           />
         </Reveal>

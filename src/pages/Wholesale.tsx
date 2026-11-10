@@ -79,7 +79,7 @@ export default function Wholesale() {
         }
         intro="Serve something your customers will remember — and photograph. CUP2EAT supplies cafes, restaurants, hotels, caterers and distributors across India."
         image={asset("img/wholesale-page.jpg")}
-        alt="Cafe table service with warm beverages — CUP2EAT wholesale"
+        alt="A bulk box of CUP2EAT edible cups packed for cafes, restaurants and events"
       />
 
       <section className="section offer-section">

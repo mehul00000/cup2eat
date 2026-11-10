@@ -68,7 +68,7 @@ export function AboutPage({ go }: { go: Go }) {
 
       <section className="b2b-band">
         <Reveal className="b2b-media">
-          <img src={asset("img/about-story.jpg")} alt="Plated dessert service — the craft behind CUP2EAT" loading="lazy" />
+          <img src={asset("img/about-story.jpg")} alt="Hands holding a CUP2EAT vanilla edible cup filled with chai — where our story began" loading="lazy" />
         </Reveal>
         <Reveal delay={120} className="b2b-copy">
           <p className="eyebrow">The original idea</p>
@@ -115,7 +115,7 @@ export function AboutPage({ go }: { go: Go }) {
 
       <section className="b2b-band flip">
         <Reveal className="b2b-media">
-          <img src={asset("img/about-craft.jpg")} alt="Warm hospitality setting — CUP2EAT's philosophy" loading="lazy" />
+          <img src={asset("img/about-craft.jpg")} alt="Freshly baked CUP2EAT edible cups cooling on a wooden bakery tray" loading="lazy" />
         </Reveal>
         <Reveal delay={120} className="b2b-copy">
           <p className="eyebrow">Our philosophy</p>
@@ -176,7 +176,7 @@ export function ContactPage() {
         }
         intro="Questions, order support or a business enquiry — the CUP2EAT team is one call or message away."
         image={asset("img/contact.jpg")}
-        alt="Coffee and conversation — reach the CUP2EAT team"
+        alt="A CUP2EAT chocolate edible cup on a cafe table — reach the CUP2EAT team"
       />
 
       <section className="section contact-section">
